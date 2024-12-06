@@ -1,16 +1,15 @@
 'use client'
 
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 
 const Navbar = () => {
-    const [isFixed, setIsFixed] = useState(false)
 
     const initDot = async() => {
         const dot = document.querySelector('#dot')
         const navMenu = document.querySelector('#nav-menu')
-
+        
         if(dot){
         dot.addEventListener('click', () => {
             dot.classList.toggle('dot-active')

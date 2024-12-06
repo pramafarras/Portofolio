@@ -1,4 +1,3 @@
-import { Download } from "react-feather"
 
 
 const Button = () => {
