@@ -13,7 +13,7 @@ const Navbar = () => {
         if(dot){
         dot.addEventListener('click', () => {
             dot.classList.toggle('dot-active')
-            navMenu.classList.toggle('hidden')
+            navMenu?.classList.toggle('hidden')
         })  
     }
     }
