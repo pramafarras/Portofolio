@@ -21,7 +21,7 @@ export default function Home() {
             <div className="w-full text-wrap self-center px-4 lg:w-1/2">
               <h3 className="text-secondary font-bold text-4xl">Prama Ramdhani Farras</h3>
               <h1 className="text-secondary font-bold text-2xl mt-3">Welcome!</h1>
-              <p className="mt-3 font-medium leading-relaxed">I am a <span className="font-bold">fresh graduate</span> from BINUS University majoring in Computer Science who is currently focusing on Web Development, especially Frontend Development. I have always been interested in everything related to design.</p>
+              <p className="mt-3 font-medium leading-relaxed">I am a <span className="font-bold">fresh graduate</span> from BINUS University, Computer Science Major who is currently focusing on Web Development, especially Frontend Development. I have always been interested in everything related to design.</p>
               <DownloadCV></DownloadCV>
             </div>
             <div className="w-full self-center lg:w-1/2">
