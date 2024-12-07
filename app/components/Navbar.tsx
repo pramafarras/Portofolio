@@ -34,9 +34,16 @@ const Navbar = () => {
       };
  
     useEffect(() =>{
-        initDot(),
-        handleScroll()
-    }, [])
+        initDot();
+        handleScroll();
+        return () => {
+            window.onscroll = null;
+            const dot = document.querySelector('#dot');
+            if (dot) {
+                dot.removeEventListener('click', () => {});
+            }
+        };
+    }, []);
     
 
     
