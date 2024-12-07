@@ -6,7 +6,7 @@ import Skills from "./components/Tech";
 import Tools from "./components/Tools";
 import Contacts from "./components/Contact";
 import Cards from "./components/Card";
-import { Download } from "react-feather";
+import { Download } from "lucide-react";
 
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="w-full self-center lg:w-1/2">
               <div className="lg:right-0 relative mt-10 lg:mt-0">
                   <Image src='/Foto_Transparan_2.png' alt="Prama"
-                  className="max-w-full mx-auto h-[510px] object-cover object-[center_75%]" width={500} height={400}></Image>
+                  className="max-w-full mx-auto h-[510px] object-cover object-[center_75%]" width={500} height={400} priority ></Image>
               <span className="absolute top-20 bottom-10 left-20 -z-10 translate-y-1">
                 <svg width="500" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path fill='#f59e0b' d="M51.8,-57.5C62.2,-53,62.4,-32,63,-13.3C63.6,5.3,64.8,21.7,58.5,34.9C52.2,48.1,38.5,58.1,25.2,58.1C12,58.1,-0.9,47.9,-18.9,44.6C-36.8,41.2,-59.9,44.5,-70.6,35.9C-81.3,27.3,-79.7,6.8,-71.9,-8.3C-64,-23.4,-49.9,-33,-36.9,-37.1C-23.9,-41.1,-11.9,-39.6,4.4,-44.8C20.7,-50.1,41.4,-62.1,51.8,-57.5Z" transform="translate(100 100) scale(1.5)" />

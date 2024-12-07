@@ -6,7 +6,7 @@ import { useEffect } from "react"
 
 const Navbar = () => {
 
-    const initDot = async() => {
+    const initDot = () => {
         const dot = document.querySelector('#dot')
         const navMenu = document.querySelector('#nav-menu')
         
@@ -19,7 +19,7 @@ const Navbar = () => {
     }
 
     const handleScroll = () => {
-        window.onscroll = function() {
+        window.onscroll = () => {
             const header = document.querySelector('#header') as HTMLElement
 
         const fixedNav = header.offsetTop;
