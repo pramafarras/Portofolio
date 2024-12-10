@@ -9,6 +9,7 @@ import { Download } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Reveal } from "./components/utils/Reveal";
 import Cards from "./components/Card";
+import ThemeToggle from "./components/ThemeSwitch";
 
 
 
@@ -24,9 +25,14 @@ export default function Home() {
     const contactRef = useRef<HTMLDivElement>(null)
 
   return (
-
+    <>
+      
+    
     <div className="overflow-x-hidden">
-      {/* <Image src='bg_abstract'></Image> */}
+    
+            <ThemeToggle  />
+            
+      
       <Navbar refs={{homeRef,
                     aboutRef,
                     techStackRef,
@@ -34,7 +40,10 @@ export default function Home() {
                     educationRef,
                     projectsRef,
                     contactRef}}></Navbar>
+                    
+                    
       <div className="mx-auto max-w-[1320px]">
+
       <Reveal>
       <section ref={homeRef} id="Home" className="lg:py-36 pt-36 ">
         <div className="container px-4 2xl:px-0 mx-auto">
@@ -42,11 +51,11 @@ export default function Home() {
           
             <div className="w-full text-wrap self-center px-4 lg:w-1/2">
               
-              <h1 className="text-secondary font-bold text-4xl">Prama Ramdhani Farras</h1>
+              <h1 className="text-secondary font-bold text-4xl dark:text-primary">Prama Ramdhani Farras</h1>
               
-              <h1 className="text-secondary font-bold text-2xl mt-3">Welcome!</h1>
+              <h1 className="text-secondary font-bold text-2xl mt-3 dark:text-primary">Welcome!</h1>
              
-              <p className="mt-3 font-medium leading-relaxed">I am a <span className="font-bold">fresh graduate</span> from BINUS University, Computer Science Major who is currently focusing on Web Development, especially Frontend Development. I have always been interested in everything related to design.</p>
+              <p className="mt-3 font-medium leading-relaxed dark:text-white">I am a <span className="font-bold dark:text-white">fresh graduate</span> from BINUS University, Computer Science Major who is currently focusing on Web Development, especially Frontend Development. I have always been interested in everything related to design.</p>
              
                 <div className="mt-6">
               <DownloadCV ></DownloadCV>
@@ -91,7 +100,7 @@ export default function Home() {
               </div>
               <div className="w-full text-wrap self-center px-4 lg:px-10 lg:w-3/5">
           
-                <h1 className="w-full text-center font-bold text-4xl text-secondary">About Me</h1>
+                <h1 className="w-full text-center font-bold text-4xl text-secondary dark:text-primary">About Me</h1>
              
                 <p className="mt-5 leading-relaxed">I recently graduated from <span className="font-bold">BINUS University</span> with a degree in Computer Science. I am currently focusing on studying and interested in Frontend Development, especially for Web Development.</p>
             
@@ -110,12 +119,12 @@ export default function Home() {
           
             <div className="flex flex-wrap">
           
-              <h1 className="w-full text-center font-bold text-4xl text-secondary">Tech Stack</h1>
+              <h1 className="w-full text-center font-bold text-4xl text-secondary dark:text-primary">Tech Stack</h1>
            
               
               <div className="w-full text-center mx-auto mt-20">
            
-                <h1 className="font-bold text-xl text-secondary text-center w-full">Language and Framework</h1>
+                <h1 className="font-bold text-xl text-secondary text-center w-full dark:text-primary">Language and Framework</h1>
               
                 <div className="flex flex-wrap justify-center items-center content-center gap-8 gap-y-0 mt-3">
                   <Skills/>
@@ -124,7 +133,7 @@ export default function Home() {
               </div>
              
               <div className="w-full text-center mx-auto mt-20">
-                <h1 className="font-bold text-xl text-secondary text-center">Tools</h1>
+                <h1 className="font-bold text-xl text-secondary text-center dark:text-primary">Tools</h1>
                 <div className="flex flex-wrap justify-center items-center content-center gap-8 gap-y-0 mt-3">
                   <Tools/>
                 </div>
@@ -139,44 +148,44 @@ export default function Home() {
         <section ref={experienceRef} id="Experience" className="py-36">
           <div className="container px-6 2xl:px-0 mx-auto">
        
-            <h1 className="w-full text-start font-bold text-4xl text-secondary">Experience</h1>
+            <h1 className="w-full text-start font-bold text-4xl text-secondary dark:text-primary">Experience</h1>
         
             <div className="relative mt-6">
-              <div className="absolute left-0.5 h-full w-1 bg-secondary "></div>
+              <div className="absolute left-0.5 h-full w-1 bg-secondary dark:bg-gray-200 "></div>
               <div className="space-y-10 py-10">
 
                     
               <div className="relative ml-8">
                 <div className="absolute -left-11 h-8 w-8 rounded-full bg-primary"></div>
-                  <h1 className="w-full text-start font-semibold text-lg text-secondary">January 2022 - January 2023</h1>
-                  <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4">HIMTI (Himpunan Mahasiswa Teknik Informatika) BINUS University</h1>
-                  <h2 className="w-full text-start font-light text-xs md:text-md text-secondary">Staff of Publication & Marketing</h2>
+                  <h1 className="w-full text-start font-semibold text-lg text-secondary dark:text-primary">January 2022 - January 2023</h1>
+                  <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4 dark:text-primary">HIMTI (Himpunan Mahasiswa Teknik Informatika) BINUS University</h1>
+                  <h2 className="w-full text-start font-light text-xs md:text-md text-secondary dark:text-primary">Staff of Publication & Marketing</h2>
                   <p className="mt-4 text-sm md:text-md">Creating content to build chemistry between HIMTI members, creating news for the BINUS website, finding sponsors for event needs, and be documentarian by participating in two events, which are called HISHOT and TECHNO.</p>
               </div>
 
               <div className="relative ml-8">
                 <div className="absolute -left-11 h-8 w-8 rounded-full bg-primary"></div>
-                <h1 className="w-full text-start font-semibold text-lg text-secondary">March 2023 - August 2024</h1>
-                <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4">BINUS University</h1>
+                <h1 className="w-full text-start font-semibold text-lg text-secondary dark:text-primary">March 2023 - August 2024</h1>
+                <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4 dark:text-primary">BINUS University</h1>
                 <div className="flex items-center justify-start gap-1 md:gap-2 ">
-                  <h2 className="font-light text-xs md:text-md text-secondary">Data Analytics Certified Specific Independent Study</h2>
+                  <h2 className="font-light text-xs md:text-md text-secondary dark:text-primary">Data Analytics Certified Specific Independent Study</h2>
                   <a href="/files/Sertifikat_SSI.pdf"
                                     download='sertifikatSSI'
                                     aria-label="downloadCertificate"
                                     target="_blank" 
-                                    rel="noopener noreferrer" className="flex flex-row items-center justify-center gap-1 rounded-xl bg-amber-500 w-fit px-3 py-1 self-center text-center text-xs md:text-sm hover:bg-amber-400 transition-all ease-in-out duration-100 border-b-4 border-blue-950 hover:border-blue-900">              
+                                    rel="noopener noreferrer" className="flex flex-row items-center justify-center gap-1 rounded-xl bg-amber-400 hover:bg-amber-500 w-fit px-3 py-1 self-center text-center text-xs md:text-sm transition-all ease-in-out duration-100 border-b-4 text-secondary border-blue-950 hover:border-blue-900 dark:border-gray-300 dark:hover:border-gray-400">              
                      Certificate <Download size={16}></Download>
                      </a>
                 </div>
                 <p className="mt-4 text-sm md:text-md">Learning about Data Analytics Course and implemented it by clustering data using K-Means Clustering Algorithm with Worldwide Internet Users Dataset.</p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200">
+                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200 dark:bg-gray-300 dark:text-secondary dark:hover:bg-gray-100">
                   Python
                   </div>
-                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200">
+                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200 dark:bg-gray-300 dark:text-secondary dark:hover:bg-gray-100">
                   Data Analytics
                   </div>
-                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200">
+                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200 dark:bg-gray-300 dark:text-secondary dark:hover:bg-gray-100">
                   Machine Learning
                   </div>
                 </div>
@@ -184,15 +193,15 @@ export default function Home() {
             
               <div className="relative ml-8">
                 <div className="absolute -left-11 h-8 w-8 rounded-full bg-primary"></div>
-                <h1 className="w-full text-start font-semibold text-lg text-secondary">September 2023 - February 2024</h1>
-                <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4">BINUS University x PTPN IV</h1>
-                <h2 className="w-full text-start font-light text-xs md:text-md text-secondary">Application Developer</h2>
+                <h1 className="w-full text-start font-semibold text-lg text-secondary dark:text-primary">September 2023 - February 2024</h1>
+                <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4 dark:text-primary">BINUS University x PTPN IV</h1>
+                <h2 className="w-full text-start font-light text-xs md:text-md text-secondary dark:text-primary">Application Developer</h2>
                 <p className="mt-4 text-sm md:text-lg">Collaborate with the development team to develop a tree counting application with the CNN Machine Learning Method Using PTPN IV Data.</p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200">
+                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200 dark:bg-gray-300 dark:text-secondary dark:hover:bg-gray-100">
                   Python
                   </div>
-                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200">
+                  <div className="rounded-full bg-slate-300 w-fit mt-2 px-3 py-1 self-center text-center md:text-sm text-xs hover:bg-slate-200 dark:bg-gray-300 dark:text-secondary dark:hover:bg-gray-100">
                   Machine Learning
                   </div>
                 </div>
@@ -207,24 +216,24 @@ export default function Home() {
         <section ref={educationRef} id="Education" className="py-36">
           <div className="container px-6 2xl:px-0 mx-auto">
      
-          <h1 className="w-full text-start font-bold text-4xl text-secondary">Education</h1>
+          <h1 className="w-full text-start font-bold text-4xl text-secondary dark:text-primary">Education</h1>
      
             <div className="relative mt-6">
-            <div className="absolute left-0.5 w-1 h-full bg-secondary"></div>
+            <div className="absolute left-0.5 w-1 h-full bg-secondary dark:bg-gray-200 "></div>
             <div className="space-y-10 py-10">
             <div className="relative ml-8">
               <div className="absolute -left-11 w-8 h-8 rounded-full bg-primary"></div>
-                  <h1 className="w-full text-start font-semibold text-lg text-secondary">2017 - 2020</h1>
-                  <h1 className="w-full text-start font-bold text-2xl text-secondary mt-4">SMAN 12 Tangerang Selatan</h1>
-                  <h2 className="w-full text-start font-light text-md text-secondary">Natural Science</h2>
+                  <h1 className="w-full text-start font-semibold text-lg text-secondary dark:text-primary">2017 - 2020</h1>
+                  <h1 className="w-full text-start font-bold text-2xl text-secondary mt-4 dark:text-primary">SMAN 12 Tangerang Selatan</h1>
+                  <h2 className="w-full text-start font-light text-md text-secondary dark:text-white">Natural Science</h2>
               </div>
 
               <div className="relative ml-8">
                 <div className="absolute -left-11 w-8 h-8 rounded-full bg-primary"></div>
                 
-                  <h1 className="w-full text-start font-semibold text-lg text-secondary">2020 - 2024</h1>
-                  <h1 className="w-full text-start font-bold text-2xl text-secondary mt-4">BINUS University</h1>
-                  <h2 className="w-full text-start font-light text-md text-secondary">S1 Computer Science</h2>
+                  <h1 className="w-full text-start font-semibold text-lg text-secondary dark:text-primary">2020 - 2024</h1>
+                  <h1 className="w-full text-start font-bold text-2xl text-secondary mt-4 dark:text-primary">BINUS University</h1>
+                  <h2 className="w-full text-start font-light text-md text-secondary dark:text-white">S1 Computer Science</h2>
                 </div>
             </div>
             </div>
@@ -237,7 +246,7 @@ export default function Home() {
           <div className="sm:container sm:px-4 2xl:px-0 m-0 sm:mx-auto w-screen sm:w-full">
     
             <div className="flex flex-col w-full justify-center items-center ">
-              <h1 className="w-full font-bold text-4xl text-secondary text-center">Portofolio</h1>
+              <h1 className="w-full font-bold text-4xl text-secondary text-center dark:text-primary">Portofolio</h1>
               <p className="mt-2 text-center">These are all projects that I have worked on</p>
             </div>
        
@@ -253,7 +262,7 @@ export default function Home() {
           <div className="container px-4 2xl:px-0 mx-auto">
             <div className="flex flex-wrap flex-col justify-center items-center text-center">
      
-              <h1 className="w-full font-bold text-4xl text-secondary">Get In Touch</h1>
+              <h1 className="w-full font-bold text-4xl text-secondary dark:text-primary">Get In Touch</h1>
          
               <div>
                 <p className="mt-4">If you have any questions, feel free to contact me.</p>
@@ -270,5 +279,6 @@ export default function Home() {
     </Reveal>
     </div>
     </div>
+    </>
   );
 }

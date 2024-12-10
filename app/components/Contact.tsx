@@ -5,7 +5,7 @@ import Link from "next/link"
 const Contacts = () => {
     return (
         <>
-            <button className="rounded-full bg-secondary w-16 h-auto hover:bg-blue-900 hover:opacity-70 transition-all ease-in-out duration-100">
+            <button className="rounded-full dark:bg-primary dark:hover:bg-amber-600 bg-secondary w-16 h-auto hover:bg-blue-900 hover:opacity-70 transition-all ease-in-out duration-100">
                 <div className="flex justify-center items-center">
                     <Link href="https://github.com/pramafarras/"
                     aria-label="githublink"
@@ -15,7 +15,7 @@ const Contacts = () => {
                     </Link>
                 </div>
             </button>
-            <button className="rounded-full bg-secondary w-16 h-auto hover:bg-blue-900 hover:opacity-70 transition-all ease-in-out duration-100">
+            <button className="rounded-full dark:bg-primary dark:hover:bg-amber-600 bg-secondary w-16 h-auto hover:bg-blue-900 hover:opacity-70 transition-all ease-in-out duration-100">
                 <div className="flex justify-center items-center">
                     <Link href="https://linkedin.com/in/prama-ramdhani-farras"
                     aria-label="linkedinlink"
@@ -25,7 +25,7 @@ const Contacts = () => {
                     </Link>
                 </div>
                 </button>
-            <button className="rounded-full bg-secondary w-16 h-auto hover:bg-blue-900 hover:opacity-70 transition-all ease-in-out duration-100">
+            <button className="rounded-full dark:bg-primary dark:hover:bg-amber-600 bg-secondary w-16 h-auto hover:bg-blue-900 hover:opacity-70 transition-all ease-in-out duration-100">
                 <div className="flex justify-center items-center">
                     <Link href="https://wa.me/+6282112654964"
                     aria-label="whatsapplink"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from 'next/font/google'
+import ThemeToggle from "./components/Theme";
 
 
 const poppins = Poppins ({
@@ -20,11 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.className}`}
+        className={`${poppins.className} bg-gray-50 dark:bg-zinc-900`}
       >
+        
+        <ThemeToggle>
         {children}
+        </ThemeToggle>
       </body>
     </html>
   );

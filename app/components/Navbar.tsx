@@ -98,7 +98,7 @@ const Navbar = ({refs}: NavbarProps) => {
             hidden: {y: "-100%"},
         }}
         id="header" 
-            className='bg-transparent fixed top-0 left-0 flex w-full max-w-full border-b shadow-md py-3 z-50'
+            className='bg-transparent fixed top-0 left-0 flex w-full max-w-full border-b shadow-md py-6 z-50'
         animate={{ y: hidden ? -100 : 0 }}
         transition={{ duration: 0.35, ease: "easeInOut" }}
         
@@ -111,45 +111,45 @@ const Navbar = ({refs}: NavbarProps) => {
                     </div>
                     <div className="flex items-center px-4">
                         <button id="dot" name='dot' type='button' className="block absolute right-4 lg:hidden z-50">
-                        <span className="w-[30px] h-[2px] my-2 block  bg-black origin-top-left transition duration-300 ease-in-out"></span>
-                        <span className="w-[30px] h-[2px] my-2 block  bg-black transition duration-300 ease-in-out"></span>
-                        <span className="w-[30px] h-[2px] my-2 block  bg-black origin-bottom-left transition duration-300 ease-in-out"></span>
+                        <span className="w-[30px] h-[2px] my-2 block  bg-black dark:bg-white origin-top-left transition duration-300 ease-in-out"></span>
+                        <span className="w-[30px] h-[2px] my-2 block  bg-black dark:bg-white transition duration-300 ease-in-out"></span>
+                        <span className="w-[30px] h-[2px] my-2 block  bg-black dark:bg-white origin-bottom-left transition duration-300 ease-in-out"></span>
                         </button>
 
-                    <nav id="nav-menu" className="hidden absolute shadow-lg border lg:border-0 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none z-40 bg-white ">
+                    <nav id="nav-menu" className="hidden absolute shadow-lg border lg:border-0 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none z-40">
                         <ul className="block gap-4 lg:flex">
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.homeRef)}>
-                            <div className="inline-block">
+                            <div className="inline-block dark:text-white">
                                 🚀Home <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.aboutRef)}>
-                            <div className="inline-block">
+                            <div className="inline-block dark:text-white">
                                 🧑About <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.techStackRef)}>
-                            <div className="inline-block">
+                            <div className="inline-block dark:text-white">
                                 💡Skills <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.experienceRef)}>
-                            <div className="inline-block">
+                            <div className="inline-block dark:text-white">
                                 💼Experience <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.educationRef)}>
-                            <div className="inline-block">
+                            <div className="inline-block dark:text-white">
                                 🎓Education <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.projectsRef)}>
-                            <div className="inline-block">
+                            <div className="inline-block dark:text-white">
                                 🛠️Projects <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.contactRef)}>
-                            <div className="inline-block">
+                            <div className="inline-block dark:text-white">
                                 💬Contact <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>

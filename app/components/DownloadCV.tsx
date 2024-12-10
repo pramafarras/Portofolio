@@ -8,7 +8,7 @@ const Button = () => {
         aria-label="downloadCV"
         target="_blank" 
         rel="noopener noreferrer"
-        className="bg-amber-400 hover:bg-amber-500 text-secondary font-bold py-2 px-4 border-b-4 border-blue-950 hover:border-blue-900 rounded-lg drop-shadow-md">              
+        className="bg-amber-400 hover:bg-amber-500  text-secondary font-bold py-2 px-4 border-b-4 dark:border-gray-300 dark:hover:border-gray-400 border-blue-950 hover:border-blue-900 rounded-lg drop-shadow-md">              
         Download CV
         </a>
         </>
