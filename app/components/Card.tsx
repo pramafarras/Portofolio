@@ -48,7 +48,9 @@ const Cards = () => {
     const [curr, setCurr] = useState(0)
     const [curr2, setCurr2] = useState(0)
     const [modal, setModal] = useState(false)
+    const [modal2, setModal2] = useState(false)
     const [isLoading, setIsLoading] = useState(true)
+    const [isLoading2, setIsLoading2] = useState(true)
     
   
   
@@ -79,7 +81,11 @@ const Cards = () => {
 
     useEffect(() => {
         setIsLoading(true)
-    }, [curr, curr2])
+    }, [curr])
+
+    useEffect(() => {
+        setIsLoading2(true)
+    }, [curr2])
 
     const getObjectFitStyle = useMemo(() => {
         return (index: number) => {
@@ -195,7 +201,7 @@ const Cards = () => {
             )}
 
             <div className="w-screen sm:w-full h-full my-6 ">
-                <div onClick={() => setModal(true)} className="overflow-hidden relative border-t-2 border-b-2 lg:border-4 sm:border-2 border-secondary dark:border-gray-300 aspect-square sm:aspect-video w-screen sm:w-full max-w-[1280px] sm:h-auto h-full mx-auto sm:rounded-lg cursor-pointer group ">
+                <div onClick={() => setModal2(true)} className="overflow-hidden relative border-t-2 border-b-2 lg:border-4 sm:border-2 border-secondary dark:border-gray-300 aspect-square sm:aspect-video w-screen sm:w-full max-w-[1280px] sm:h-auto h-full mx-auto sm:rounded-lg cursor-pointer group ">
                     <div className={'flex transition-transform ease-in-out duration-500 sm:h-full h-4/5'} style={{ transform: `translateX(-${curr2*100}%)` }}>
                     
                         {portofolio.map((j, i) => (
@@ -259,20 +265,20 @@ const Cards = () => {
 
             
 
-            {modal && (
+            {modal2 && (
                 
 
                 
                 
-                <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setModal(false)}>
-                    {isLoading && (
+                <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setModal2(false)}>
+                    {isLoading2 && (
                                 <div className="absolute inset-0 flex items-center justify-center rounded-md">
                                     <Loader2 className="animate-spin text-white" size={32} />
                                 </div>
                             )}
                     <div className="relative max-w-[90vw]">
-                    {!isLoading && (
-                        <button onClick={() => setModal(false)} className="absolute -top-10 right-0 lg:top-0 lg:-right-10 text-white hover:text-gray-300 border border-white rounded-md">
+                    {!isLoading2 && (
+                        <button onClick={() => setModal2(false)} className="absolute -top-10 right-0 lg:top-0 lg:-right-10 text-white hover:text-gray-300 border border-white rounded-md">
                             <X size={32} 
                                  />
                                  
@@ -287,8 +293,8 @@ const Cards = () => {
                                 priority 
                                 className={`object-contain max-h-[60vh] sm:max-h-[75vh] lg:max-h-[90vh] w-auto rounded-md ${!isLoading ? 'border' : ''}` }
                                 onClick={(e) => e.stopPropagation()}
-                                onLoadingComplete={() => setIsLoading(false)}
-                                onLoad={() => setIsLoading(false)}
+                                onLoadingComplete={() => setIsLoading2(false)}
+                                onLoad={() => setIsLoading2(false)}
                             />
                             
                         </div>
