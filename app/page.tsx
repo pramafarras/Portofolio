@@ -48,7 +48,7 @@ export default function Home() {
       <div className="mx-auto max-w-[1320px]">
 
       <Reveal>
-      <section ref={homeRef} id="Home" className="lg:py-36 pt-36 ">
+      <section ref={homeRef} id="Home" className="lg:py-36 mt-36 ">
         <div className="container px-8 2xl:px-0 mx-auto">
           <div className="flex flex-wrap h-auto ">
             <div className="w-full text-wrap self-center px-4 lg:w-1/2">
@@ -61,14 +61,14 @@ export default function Home() {
             </div>
             <div className="w-full self-center mt-10 lg:mt-0 lg:w-1/2">
               <div className="lg:right-0 relative mt-0 hover:scale-110  transition-all ease-in-out duration-200 ">
-                  {/* <Image src='/Images/prama_web.webp' alt="Prama"
+                  <Image src='/Images/prama_web.webp' alt="Prama"
                   className="max-w-full max-h-full mx-auto aspect-square p-6 lg:p-4"
                   width={400}
                   height={400}
                   priority={true}
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  /> */}
+                  />
               </div>
             </div>
           </div>
@@ -83,10 +83,10 @@ export default function Home() {
             <div className="flex flex-wrap h-auto">
               <div className="w-0 h-0 lg:h-auto self-center lg:w-2/5">
                 <div className="lg:right-0 relative lg:mt-0 mx-auto group">
-                  {/* <Image src='/Images/FotoGrad_crop.png' alt="PramaGradcrop"
+                  <Image src='/Images/FotoGrad_crop.png' alt="PramaGradcrop"
                     className="absolute left-1/2 -translate-x-1/2 top-0 max-w-full mx-auto  lg:transition-all lg:ease-in-out lg:duration-200 lg:h-[500px] lg:w-auto lg:object-cover lg:object-[center_75%] opacity-0 lg:group-hover:opacity-100 lg:group-hover:scale-105 lg:rounded-sm lg:z-20" width={500} height={400} loading="lazy"></Image>
                   <Image src='/Images/FotoGrad.jpeg' alt="PramaGrad"
-                    className=" max-w-full mx-auto lg:group-hover:grayscale lg:transition-all lg:ease-in-out lg:duration-200 h-[500px] lg:w-auto lg:object-cover lg:object-[center_75%] lg:group-hover:scale-105 lg:rounded-sm" width={500} height={400} loading="lazy"></Image> */}
+                    className=" max-w-full mx-auto lg:group-hover:grayscale lg:transition-all lg:ease-in-out lg:duration-200 h-[500px] lg:w-auto lg:object-cover lg:object-[center_75%] lg:group-hover:scale-105 lg:rounded-sm" width={500} height={400} loading="lazy"></Image>
                 </div>
               </div>
               <div className="w-full text-wrap self-center px-4 lg:px-10 lg:w-3/5">
@@ -224,7 +224,7 @@ export default function Home() {
               <p className="mt-2 text-center">These are all projects that I have worked on</p>
             </div>
             <div className="sm:w-full w-screen sm:px-4 flex flex-wrap mt-2 flex-col justify-center self-center sm:mx-auto">
-              {/* <Cards/> */}
+              <Cards/>
             </div>
           </div>
         </section>
