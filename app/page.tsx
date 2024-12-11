@@ -47,7 +47,7 @@ export default function Home() {
                     
       <div className="mx-auto max-w-[1320px]">
 
-      <Reveal>
+      
       <section ref={homeRef} id="Home" className="lg:py-36 mt-36 ">
         <div className="container px-8 2xl:px-0 mx-auto">
           <div className="flex flex-wrap h-auto ">
@@ -74,10 +74,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      </Reveal>
-
-
-      <Reveal>
+      
         <section ref={aboutRef} id="About" className="lg:mt-10 mt-0 lg:py-36 py-12">
           <div className="container px-8 2xl:px-0 mx-auto ">
             <div className="flex flex-wrap h-auto">
@@ -99,10 +96,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        </Reveal>
-
-
-        <Reveal>
+        
         <section ref={techStackRef} id="TechStack" className="py-36">
           <div className="container px-8 2xl:px-0 mx-auto">
             <div className="flex flex-wrap">
@@ -122,9 +116,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        </Reveal>
         
-        <Reveal>
         <section ref={experienceRef} id="Experience" className="py-36">
           <div className="container px-6 2xl:px-0 mx-auto">
             <h1 className="w-full text-start font-bold text-4xl text-secondary dark:text-primary">Experience</h1>
@@ -184,10 +176,7 @@ export default function Home() {
           </div>
         </div>
         </section>
-        </Reveal>
-
-
-        <Reveal>
+        
         <section ref={educationRef} id="Education" className="py-36">
           <div className="container px-8 2xl:px-0 mx-auto">
      
@@ -213,10 +202,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        </Reveal>
-
-
-        <Reveal>
+       
         <section ref={projectsRef} id="Projects" className="py-36">
           <div className="sm:container sm:px-4 2xl:px-0 m-0 sm:mx-auto w-screen sm:w-full">
             <div className="flex flex-col w-full justify-center items-center ">
@@ -228,10 +214,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        </Reveal>
-
-
-        <Reveal>
+        
         <section ref={contactRef} id="Contact" className="py-36 mb-20">
           <div className="container px-8 2xl:px-0 mx-auto">
             <div className="flex flex-wrap flex-col justify-center items-center text-center">
@@ -246,7 +229,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        </Reveal>
+        
       </div>
     </div>
     </>
