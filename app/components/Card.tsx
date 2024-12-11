@@ -8,14 +8,14 @@ import { ChevronLeft, ChevronRight, ExternalLink, Loader, Loader2, X } from 'luc
 
 
 const alato = [
-    "/Alato/Home_page.png",
-    "/Alato/Login_page.png",
-    "/Alato/Equipments_page.png",
-    "/Alato/Bodyparts_page.png",
-    "/Alato/Workouts_page.png",
-    "/Alato/Workoutdetail_page.png",
-    "/Alato/Ratedlist_page.png",
-    "/Alato/Playlist_page.png",
+    "/Alato/Home_page.webp",
+    "/Alato/Login_page.webp",
+    "/Alato/Equipments_page.webp",
+    "/Alato/Bodyparts_page.webp",
+    "/Alato/Workouts_page.webp",
+    "/Alato/Workoutdetail_page.webp",
+    "/Alato/Ratedlist_page.webp",
+    "/Alato/Playlist_page.webp",
 ]
 
 const alatotech = [
@@ -29,8 +29,8 @@ const alatotech = [
 ]
 
 const portofolio = [
-    "/Portofolio/lightmode.png",
-    "/Portofolio/darkmode.png",
+    "/Portofolio/lightmode.webp",
+    "/Portofolio/darkmode.webp",
 ]
 
 const portofoliotech = [
