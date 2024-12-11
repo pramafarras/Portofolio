@@ -98,7 +98,7 @@ const Navbar = ({refs}: NavbarProps) => {
             hidden: {y: "-100%"},
         }}
         id="header" 
-            className='bg-transparent fixed top-0 left-0 flex w-full max-w-full border-b shadow-md py-6 z-50'
+            className='bg-white dark:bg-zinc-900 fixed top-0 left-0 flex w-full max-w-full border-b shadow-md py-6 z-50'
         animate={{ y: hidden ? -100 : 0 }}
         transition={{ duration: 0.35, ease: "easeInOut" }}
         
@@ -116,7 +116,7 @@ const Navbar = ({refs}: NavbarProps) => {
                         <span className="w-[30px] h-[2px] my-2 block  bg-black dark:bg-white origin-bottom-left transition duration-300 ease-in-out"></span>
                         </button>
 
-                    <nav id="nav-menu" className="hidden absolute shadow-lg border lg:border-0 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none z-40">
+                    <nav id="nav-menu" className="hidden absolute shadow-lg border lg:border-0 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none z-40 bg-white dark:bg-zinc-900 lg:bg-transparent">
                         <ul className="block gap-4 lg:flex">
                             <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.homeRef)}>
                             <div className="inline-block dark:text-white">
@@ -148,7 +148,7 @@ const Navbar = ({refs}: NavbarProps) => {
                                 🛠️Projects <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>
                             </li>
-                            <li className="group border-b lg:border-b-0 pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.contactRef)}>
+                            <li className="group pl-4 lg:pl-0 text-base text-black py-2 flex cursor-pointer" onClick={() => goTo(refs.contactRef)}>
                             <div className="inline-block dark:text-white">
                                 💬Contact <div className="block w-0 lg:group-hover:w-full transition-all ease-in-out duration-200 mt-0.5 h-[2px] bg-primary"></div>
                             </div>

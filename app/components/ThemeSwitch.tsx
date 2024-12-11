@@ -29,7 +29,7 @@ export default function ThemeSwitch(){
     }
 
     return (
-        <div onClick={() => switchTheme()} className="left-1.5 bottom-4 sm:left-8 sm:bottom-8 fixed cursor-pointer bg-dark hover:bg-secondary dark:bg-primary dark:hover:bg-amber-400 p-3 rounded-full z-50">
+        <div onClick={() => switchTheme()} className="right-4 bottom-8 shadow-lg sm:left-8 sm:bottom-8 fixed cursor-pointer bg-dark hover:bg-secondary dark:bg-primary dark:hover:bg-amber-400 p-3 rounded-full z-50">
         {resolvedTheme === 'dark'
         ? <Sun onClick={() => setTheme('light')} className='text-black'></Sun>
         : <Moon onClick={() => setTheme('dark')} className='text-white'></Moon>}
