@@ -54,7 +54,7 @@ export default function Home() {
             <div className="w-full text-wrap self-center pl-4 lg:w-1/2">
               <h1 className="text-secondary font-bold text-4xl dark:text-primary">Prama Ramdhani Farras</h1>
               <h1 className="text-secondary font-bold text-2xl mt-3 dark:text-primary">Welcome!</h1>
-              <p className="mt-3 font-medium leading-relaxed dark:text-white">I am a <span className="font-bold dark:text-white">fresh graduate</span> from BINUS University, Computer Science Major who is currently focusing on Web Development, especially Frontend Development. I have always been interested in everything related to design.</p>
+              <p className="mt-3 font-medium leading-relaxed dark:text-white">I am a <span className="font-bold dark:text-white">fresh graduate</span> from BINUS University, Computer Science Major who is currently focusing on Web Development, especially Front End Development. I have always been interested in everything related to design.</p>
                 <div className="mt-6">
               <DownloadCV ></DownloadCV>
               </div>
@@ -93,7 +93,7 @@ export default function Home() {
                 <h1 className="w-full text-center font-bold text-4xl text-secondary dark:text-primary">About Me</h1>
                 <p className="mt-5 leading-relaxed">I recently graduated from <span className="font-bold">BINUS University</span> with a degree in Computer Science. I am currently focusing on studying and interested in Frontend Development, especially for Web Development.</p>
                 <p className="mt-3 leading-relaxed">
-                I enjoy doing things related to design, such as interfaces. Also, I really love design and editing. I love to learn new things and always open to new opportunities. Most importantly, I am always ready to continue learning throughout my life.
+                I enjoy doing things related to design, such as interfaces. Also, I really love design and editing. I love learning new things and always open for new opportunities. Most importantly, I am ready to face new challenges as I continue to learn throughout my life.
                 </p>
               </div>
             </div>
