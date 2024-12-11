@@ -48,7 +48,7 @@ export default function Home() {
       <div className="mx-auto max-w-[1320px]">
 
       <Reveal>
-      <section ref={homeRef} id="Home" className="lg:py-48">
+      <section ref={homeRef} id="Home" className="lg:py-48 pt-36">
         <div className="container px-8 2xl:px-0 mx-auto">
           <div className="flex flex-wrap h-auto ">
             <div className="w-full text-wrap self-center pl-4 lg:w-1/2">
@@ -78,7 +78,7 @@ export default function Home() {
 
 
       <Reveal>
-        <section ref={aboutRef} id="About" className="lg:mt-10 mt-0 lg:py-48 py-12 ">
+        <section ref={aboutRef} id="About" className="lg:mt-10 mt-0 lg:py-48 py-36 ">
           <div className="container px-8 2xl:px-0 mx-auto ">
             <div className="flex flex-wrap h-auto">
               <div className="w-0 h-0 lg:h-auto self-center lg:w-2/5 ">

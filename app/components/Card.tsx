@@ -249,7 +249,7 @@ const Cards = () => {
                                     <ExternalLink className="size-[14px] sm:text-[18px] md:text-[24px] lg:size-[20px] "></ExternalLink>
                                 </Link>
                             </div>
-                            <p className="text-[8px] sm:text-[12px] md:text-[14px] lg:text-md lg:mt-2 mt-0  text-black">Website project that contains information about me, including my skills, experiences, education, and projects</p>
+                            <p className="text-[8px] sm:text-[12px] md:text-[14px] lg:text-md lg:mt-2 mt-0  text-black">Website project that contains information about myself, including my skills, experiences, education, and projects</p>
                             <div className="flex flex-wrap lg:gap-2 gap-0.5 mt-0.5 sm:mt-1 lg:mt-2 justify-center items-center content-start w-full">
                                 {portofoliotech.map((value, index) => (
                                     <div key={index} className="rounded-full bg-slate-300 size-fit px-2 py-0.5 mt-1 lg:px-3 lg:py-1 self-center text-center text-[6px] sm:text-[10px] md:text-[14px] lg:text-sm hover:bg-slate-100 text-black">
@@ -291,7 +291,7 @@ const Cards = () => {
                                 width={1920} 
                                 height={1080} 
                                 priority 
-                                className={`object-contain max-h-[60vh] sm:max-h-[75vh] lg:max-h-[90vh] w-auto rounded-md ${!isLoading ? 'border' : ''}` }
+                                className={`object-contain max-h-[80vh] sm:max-h-[85vh] lg:max-h-[90vh] w-auto rounded-md ${!isLoading ? 'border' : ''}` }
                                 onClick={(e) => e.stopPropagation()}
                                 onLoadingComplete={() => setIsLoading2(false)}
                                 onLoad={() => setIsLoading2(false)}
