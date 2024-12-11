@@ -92,18 +92,17 @@ const Navbar = ({refs}: NavbarProps) => {
     } )
 
     return (
-        // <motion.div 
-        // variants={{
-        //     visible: {y: 0},
-        //     hidden: {y: "-100%"},
-        // }}
-        // id="header" 
-        //     className='bg-white dark:bg-zinc-900 fixed top-0 left-0 flex w-full max-w-full border-b shadow-md py-6 z-50'
-        // animate={{ y: hidden ? -100 : 0 }}
-        // transition={{ duration: 0.35, ease: "easeInOut" }}
+        <motion.div 
+        variants={{
+            visible: {y: 0},
+            hidden: {y: "-100%"},
+        }}
+        id="header" 
+            className='bg-white dark:bg-zinc-900 fixed top-0 left-0 flex w-full max-w-full border-b shadow-md py-6 z-50'
+        animate={{ y: hidden ? -100 : 0 }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
         
-        // >
-            <div className='bg-white dark:bg-zinc-900 fixed top-0 left-0 flex w-full max-w-full border-b shadow-md py-6 z-50'>
+        >
         
             <div className="container mx-auto">
                 <div className="flex w-full items-center justify-between relative">
@@ -159,8 +158,8 @@ const Navbar = ({refs}: NavbarProps) => {
                     </div>
                 </div>
             </div>
-            </div>
         
+        </motion.div>
     )
 }
 
