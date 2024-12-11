@@ -48,10 +48,10 @@ export default function Home() {
       <div className="mx-auto max-w-[1320px]">
 
       <Reveal>
-      <section ref={homeRef} id="Home" className="lg:py-36 mt-36 ">
+      <section ref={homeRef} id="Home" className="lg:py-48">
         <div className="container px-8 2xl:px-0 mx-auto">
           <div className="flex flex-wrap h-auto ">
-            <div className="w-full text-wrap self-center px-4 lg:w-1/2">
+            <div className="w-full text-wrap self-center pl-4 lg:w-1/2">
               <h1 className="text-secondary font-bold text-4xl dark:text-primary">Prama Ramdhani Farras</h1>
               <h1 className="text-secondary font-bold text-2xl mt-3 dark:text-primary">Welcome!</h1>
               <p className="mt-3 font-medium leading-relaxed dark:text-white">I am a <span className="font-bold dark:text-white">fresh graduate</span> from BINUS University, Computer Science Major who is currently focusing on Web Development, especially Frontend Development. I have always been interested in everything related to design.</p>
@@ -59,10 +59,10 @@ export default function Home() {
               <DownloadCV ></DownloadCV>
               </div>
             </div>
-            <div className="w-full self-center mt-10 lg:mt-0 lg:w-1/2">
+            <div className="w-full h-full self-center mt-10 lg:mt-0 lg:w-1/2">
               <div className="lg:right-0 relative mt-0 hover:scale-110  transition-all ease-in-out duration-200 ">
                   <Image src='/Images/prama_web.webp' alt="Prama"
-                  className="max-w-full max-h-full mx-auto aspect-square p-6 lg:p-4"
+                  className="max-w-full max-h-full lg:w-[480px] lg:h-[480px] mx-auto aspect-square p-6 lg:p-0 "
                   width={400}
                   height={400}
                   priority={true}
@@ -78,10 +78,10 @@ export default function Home() {
 
 
       <Reveal>
-        <section ref={aboutRef} id="About" className="lg:mt-10 mt-0 lg:py-36 py-12">
+        <section ref={aboutRef} id="About" className="lg:mt-10 mt-0 lg:py-48 py-12 ">
           <div className="container px-8 2xl:px-0 mx-auto ">
             <div className="flex flex-wrap h-auto">
-              <div className="w-0 h-0 lg:h-auto self-center lg:w-2/5">
+              <div className="w-0 h-0 lg:h-auto self-center lg:w-2/5 ">
                 <div className="lg:right-0 relative lg:mt-0 mx-auto group">
                   <Image src='/Images/FotoGrad_crop.png' alt="PramaGradcrop"
                     className="absolute left-1/2 -translate-x-1/2 top-0 max-w-full mx-auto  lg:transition-all lg:ease-in-out lg:duration-200 lg:h-[500px] lg:w-auto lg:object-cover lg:object-[center_75%] opacity-0 lg:group-hover:opacity-100 lg:group-hover:scale-105 lg:rounded-sm lg:z-20" width={500} height={400} loading="lazy"></Image>
