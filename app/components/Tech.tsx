@@ -126,7 +126,7 @@ const Skills = () => {
                     <div className="w-full flex justify-center items-center">
                         <Image src='/Images/framer_motion.webp' alt='framer_motion' width={100} height={300} className="w-44 h-auto rounded-md" loading="eager"></Image>
                     </div>
-                    <h1 className="absolute bottom-2 inset-x-0 text-center px-1 lg:px-0 text-sm leading-3">Framer Motion</h1>
+                    <h1 className="absolute bottom-2 inset-x-0 text-center px-1 text-sm leading-3">Framer Motion</h1>
                 </div>
             </div>
             
