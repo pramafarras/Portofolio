@@ -144,7 +144,7 @@ export default function Home() {
                 <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4 dark:text-primary">BINUS University</h1>
                 <div className="flex items-center justify-start gap-1 md:gap-2 ">
                   <h2 className="font-light text-xs md:text-md text-secondary dark:text-primary">Data Analytics Certified Specific Independent Study</h2>
-                  <a href="/files/Sertifikat_SSI.pdf"
+                  <a href="/files/SSI_Sertifikat.png"
                                     download='sertifikatSSI'
                                     aria-label="downloadCertificate"
                                     target="_blank" 
