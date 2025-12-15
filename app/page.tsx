@@ -168,7 +168,7 @@ export default function Home() {
               <div className="relative ml-8">
                 <div className="absolute -left-11 h-8 w-8 rounded-full bg-primary"></div>
                 <h1 className="w-full text-start font-semibold text-lg text-secondary dark:text-primary">September 2023 - February 2024</h1>
-                <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4 dark:text-primary">BINUS University x PTPN IV</h1>
+                <h1 className="w-full text-start font-bold text-xl md:text-2xl text-secondary mt-4 dark:text-primary">PT Perkebunan Nusantara IV (PTPN IV)</h1>
                 <h2 className="w-full text-start font-light text-xs md:text-md text-secondary dark:text-primary">Application Developer</h2>
                 <p className="mt-4 text-sm md:text-lg">Collaborate with the development team to develop a tree counting application with the CNN Machine Learning Method Using PTPN IV Data.</p>
                 <div className="flex flex-wrap gap-2">
